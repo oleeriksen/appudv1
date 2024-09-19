@@ -7,4 +7,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Modul4\Modul4.csproj" />
+    </ItemGroup>
+
 </Project>
