@@ -2,7 +2,7 @@ namespace Modul4;
 
 public class TestDice
 {
-    public static void Run()
+    public void Run()
     {
         Dice d = new Dice(20);
 

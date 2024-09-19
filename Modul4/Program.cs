@@ -3,4 +3,4 @@
 
 Console.WriteLine("Hello, World!");
 
-Modul4.TestDice.Run();
+new Modul4.TestDice().Run();
