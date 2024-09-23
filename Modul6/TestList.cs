@@ -21,8 +21,8 @@ public class TestList
         a.Sort();
 
         a.RemoveAll(t => t < 0);
-        
-        
+
+        a.Count(g => g == 2);
 
 
     }
