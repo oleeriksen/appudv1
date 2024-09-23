@@ -11,7 +11,7 @@ public class Opgave3_2
             grades[i] = ReadInt($"Indtast karakter nr. {i+1}: ");
         }
 
-        double avg = Opgave3_1.Average(grades);
+        double avg = Average(grades);
         Console.WriteLine($"Gennemsnit = {avg}");
 
         int[] validGrades = { -3, 0, 2, 4, 7, 10, 12 };
@@ -40,5 +40,13 @@ public class Opgave3_2
             if (tal == key)
                 c++;
         return c;
+    }
+    
+    private static double Average(int[] a)
+    {
+        double sum = 0;
+        foreach (int tal in a)
+            sum += tal;
+        return sum / a.Length;
     }
 }
