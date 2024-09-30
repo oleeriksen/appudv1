@@ -19,7 +19,7 @@ public class Dice
         _size = size;
     }
 
-    public void Roll()
+    public virtual void Roll()
     {
         _eyes = _random.Next(_size)+1;
     }

@@ -4,13 +4,19 @@ public class TestDice
 {
     public void Run()
     {
-        Dice d = new Dice(20);
+        var e = new int[6];
 
-        for (int i = 0; i < 10; i++)
+        Dice d = new MafiaDice();
+
+        for (var i = 0; i < 100000; i++)
         {
             d.Roll();
-            int eyes = d.GetEyes();
-            Console.WriteLine(eyes);
+            var eyes = d.GetEyes();
+            e[eyes - 1]++;
+            //Console.WriteLine(eyes);
         }
+
+        foreach (var v in e)
+            Console.WriteLine(v);
     }
 }

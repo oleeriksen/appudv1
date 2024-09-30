@@ -4,7 +4,7 @@ public class TestList
 {
     public static void Run()
     {
-        List<int> numbers = new();
+        LogList numbers = new();
         while (true)
         {
             int aNumber = ReadInt("Indtast tal: ");
